@@ -3,9 +3,8 @@ from Position import Position
 
 class PositionsMap:
 
-    positions = []
-
     def __init__(self, map):
+        self.positions = []
         count = 0
 
         self.positions.append([])
