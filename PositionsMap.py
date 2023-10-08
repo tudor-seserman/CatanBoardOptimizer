@@ -10,17 +10,17 @@ class PositionsMap:
         self.positions.append([])
         for i in range(3):
             self.positions[0].append(
-                Position(map.getItemAtIndex(count, i+1).number, [2, len(self.positions[0])]))
+                Position(map.getItemAtIndex(count, i+1).dots, [2, len(self.positions[0])]))
 
         self.positions.append([])
         for i in range(4):
             self.positions[1].append(
-                Position(map.getItemAtIndex(count, i).number+map.getItemAtIndex(count, i+1).number, [1, len(self.positions[1])+1]))
+                Position(map.getItemAtIndex(count, i).dots+map.getItemAtIndex(count, i+1).dots, [1, len(self.positions[1])+1]))
 
         self.positions.append([])
         for i in range(4):
             self.positions[2].append(
-                Position(map.getItemAtIndex(count, i+1).number+map.getItemAtIndex(count, i).number + map.getItemAtIndex(count+1, i+1).number, [1, len(self.positions[1])+1]))
+                Position(map.getItemAtIndex(count, i+1).dots+map.getItemAtIndex(count, i).dots + map.getItemAtIndex(count+1, i+1).dots, [1, len(self.positions[1])+1]))
 
         count += 1
         # Keep adding rows of positions
