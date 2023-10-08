@@ -30,8 +30,7 @@ from Tile import Tile
 
 number_test_board = Board(
     [3, 7, 9, 10, 9, 6, 5, 6, 11, 4, 11, 12, 5, 10, 2, 3, 8, 4, 8])
-print(number_test_board.getAllNumbers())
+print(number_test_board)
 print("-"*100)
 number_test_board_position_map = PositionsMap(number_test_board)
-# This will eventually print the sum of all the dots from the tiles that boarder the position
 print(number_test_board_position_map)
